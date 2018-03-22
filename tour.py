@@ -63,3 +63,7 @@ class Tour(object):
         if mutated:
             self.laenge=self.getLaenge()
 
+    def getStaedte(self):
+        for i in self.liste:
+            print(i.getXY())
+

@@ -122,10 +122,10 @@ class Tourlist(object):
 
 
 
-t =Tourlist(100,20)
+"""t =Tourlist(100,20)
 print(quicksort(t.tourlist,compare_fitness)[0].laenge)
 for i in range(10):
     t.createNewGen(20)
     print(quicksort(t.tourlist,compare_fitness)[0].laenge)
-
+"""
 

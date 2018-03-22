@@ -13,8 +13,7 @@ class Gagui():
         self.button.pack()
         self.label = Label(self.master, text="")
         self.label.pack()
-        self.tour=self.tourlist
-        self.tourzeichnen(self.tour.getTour(self.counter))
+        self.tourzeichnen(self.tourlist.getTour(self.counter))
 
     #def buttonclicked(self):
        # self.counter = self.counter + 1
@@ -22,9 +21,11 @@ class Gagui():
        # self.tourzeichnen(self.tour.getTour(self.counter))
 
     def buttonclicked(self):
+        for i in range(1):
+            self.tourlist.createNewGen(10)
         self.frame.delete(ALL)
-        t.createNewGen(10)
-        self.tourzeichnen(self.tour.getTour(0))
+        self.tourlist.getTour(0).getStaedte()
+        self.tourzeichnen(self.tourlist.getTour(0))
 
 
 
@@ -63,7 +64,7 @@ class Gagui():
                 self.frame.create_rectangle(los2[0]-3, los2[1]-3, rus2[0]+3, rus2[1]+3, fill="#000000", width="0")
                 self.frame.create_rectangle(los2[0], los2[1], rus2[0], rus2[1], fill="#00dd00", width="0")
 
-        mainloop()
+        #mainloop()
 
 
 
