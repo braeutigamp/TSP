@@ -3,11 +3,11 @@ from random import randint
 class Stadt(object):
     def __init__(self,x=None,y=None):
         if x ==None:
-            self.x=randint(0,1000)
+            self.x=randint(10,990)
         else:
             self.x=x
         if y ==None:
-            self.y=randint(0,1000)
+            self.y=randint(10,540)
         else:
             self.y=y
 

@@ -68,7 +68,7 @@ class Tourlist(object):
             a = randint(0,len(list)-1)
             b = randint(0,len(list)-1)
             newlist.append(self.crossover(list[a],list[b]))
-        self.tourlist=quicksort(newlist,compare_fitness)
+        self.tourlist=quicksort(newlist+list,compare_fitness)[:100]
         self.mutiere()
 
     def shortTourlist(self,prozent):
